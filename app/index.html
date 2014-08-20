@@ -19,24 +19,50 @@
 
   </head>
   <body>
+<header>
+<nav>
+  <ul>
+    <li><a href="">nav item</a></li>
+    <li><a href="">nav item</a></li>
+    <li><a href="">nav item</a></li>
+  </ul>
+</nav>
+</header>
+<div class="container">
+  <h1>My Blog</h1>
+  <section>
 
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Normalize CSS</li>
 
-        <li>Sass</li>
+  </section>
+  <aside>
+    <div class="block">
+      <form name="newPost">
+        <input type="text" class="title" name="title" placeholder="Title">
+        <textarea name="content" id="blogContent" cols="30" rows="10">
 
-
-
-
-        <li>UnderscoreJS</li>
-
-      </ul>
-      <p>Don't forget to update your readme file!!</p>
+        </textarea>
+        <input type="text" class="author" name="author" placeholder="author">
+        <input type="submit" value="Submit Post">
+      </form>
     </div>
+    <div class="block">
+      <ul class="recentPosts">
+        <li><a href="">post Title</a></li>
+        <li><a href="">post Title</a></li>
+        <li><a href="">post Title</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+<footer>
+<nav>
+  <ul>
+    <li><a href="">nav item</a></li>
+    <li><a href="">nav item</a></li>
+    <li><a href="">nav item</a></li>
+  </ul>
+</nav>
+</footer>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -46,6 +72,7 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/templates.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
